@@ -1,4 +1,5 @@
-import Sequelize from "sequelize"
+import Sequelize from 'sequelize';
+
 module.exports = {
   up: queryInterface => {
     return queryInterface.createTable('users', {
