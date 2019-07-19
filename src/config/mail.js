@@ -1,12 +1,12 @@
 export default {
-  host: "smtp.mailtrap.io",
+  host: 'smtp.mailtrap.io',
   port: 2525,
-  secure:false,
+  secure: false,
   auth: {
-    user: "66461510ed72e1",
-    pass: "a07e5576169b8f"
+    user: '66461510ed72e1',
+    pass: 'a07e5576169b8f',
   },
-  default:{
-    from:'Equipe MeetApp <noreply@meetapp.com>'
-  }
-}
+  default: {
+    from: 'Equipe MeetApp <noreply@meetapp.com>',
+  },
+};

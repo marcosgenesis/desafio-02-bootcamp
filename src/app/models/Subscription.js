@@ -1,15 +1,12 @@
-import { Model } from "sequelize";
+import { Model } from 'sequelize';
 
-class Subscription extends Model{
-  static init(sequelize){
-    super.init({
-
-    },{sequelize})
+class Subscription extends Model {
+  static init(sequelize) {
+    super.init({}, { sequelize });
   }
-  static associate(models){
-    this.belongsTo(models.Meetup,{foreignKey:'meetup_id',as: 'meetup'})
-    this.belongsTo(models.User,{foreignKey:'user_id',as:'user'})
+  static associate(models) {
+    this.belongsTo(models.Meetup, { foreignKey: 'meetup_id', as: 'meetup' });
+    this.belongsTo(models.User, { foreignKey: 'user_id', as: 'user' });
   }
-  
 }
-export default Subscription
+export default Subscription;

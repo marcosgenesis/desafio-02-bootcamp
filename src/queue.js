@@ -1,3 +1,2 @@
-
-import Queue from "./lib/Queues"
-Queue.processQueue()
+import Queue from './lib/Queues';
+Queue.processQueue();
